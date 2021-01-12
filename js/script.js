@@ -1,7 +1,7 @@
 if (window.SimpleSlide) {
   new SimpleSlide({
     slide: 'slideHome', // nome do atributo data-slide="principal"
-    time: 10000, // tempo de transição dos slides
+    time: 5000, // tempo de transição dos slides
     nav: true, // se deve ou não mostrar a navegação
     auto: true, // se o slide deve passar automaticamente
     pauseOnHover: true, // pausa a transição automática
@@ -10,7 +10,6 @@ if (window.SimpleSlide) {
 if (window.SimpleAnime) {
   new SimpleAnime();
 }
-
 if(window.SimpleForm) {
   new SimpleForm({
     form: ".formphp", // seletor do formulário
@@ -19,3 +18,16 @@ if(window.SimpleForm) {
     sucesso: "<div id='form-sucesso'><h2>Formulário enviado com sucesso</h2><p>Em breve entraremos em contato!</p></div>", // mensagem de sucesso
   });
 }
+
+$(function() {
+
+  $('.watch-slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    prevArrow: $("#arrow-prev"),
+    nextArrow: $("#arrow-next"),
+  });
+
+})

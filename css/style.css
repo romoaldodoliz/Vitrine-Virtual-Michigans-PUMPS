@@ -23,13 +23,35 @@ ul {
   letter-spacing: 0.2em;
   font-weight: bold;
 }
-.callToActionFundoBranco a {
-  padding: 10px 15px;
-  border-radius: 5px;
-  background: #174B7F;
-  color: white;
+.btnFundoWhite {
+  border: 5px solid #000;
+  margin-top: 10px;
+  padding: 10px;
+  color: #000;
   text-transform: uppercase;
   font-weight: bold;
+  line-height: 20px;
+  letter-spacing: .1em;
+  background: none;
+}
+.btnFundoWhite:hover {
+  color: #174B7F;
+  border: 5px solid #174B7F;
+}
+.btnFundoPreto {
+  border: 5px solid #fff;
+  margin-top: 10px;
+  padding: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: .1em;
+  background: none;
+}
+.btnFundoPreto:hover {
+  color: #000;
+  border: 5px solid #000;
 }
 /* Menu */
 .menu {
@@ -40,17 +62,17 @@ ul {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 10px;
-  text-transform: uppercase;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
 }
 .menu ul li {
   display: inline-block;
   margin: 20px 5px;
 }
 .menu ul li a {
-  padding: 5px;
+  padding: 15px;
   color: #fff;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .menu ul li a:hover{
   background: #fff;
@@ -185,7 +207,7 @@ ul {
   flex-direction: column;
   margin: 10px;
   background: chocolate;
-  box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
 }
 .fotosProdutos .botaoEsquerdo {
   margin: 0 auto;
@@ -200,10 +222,303 @@ ul {
   text-align: center;
   padding: 80px;
 }
-.porQueAEmpresa img{
-  margin: 100px auto
+.porQueAEmpresa ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
 }
-/* SLIDE FOTOS */
+.porQueAEmpresa ul li{
+  width: 280px;
+}
+.porQueAEmpresa img{
+  margin: 0 auto;
+  width: 300px;
+  z-index: 1;
+}
+.porQueAEmpresa ul::before {
+  /* TODO - Alterar cor img separador */
+  content: "";
+  position: absolute;
+  top: 2299px;
+  width: 623px;
+  height: 110px;
+  background: url(../images/linhasTidePorqueEscolherAEmpresa.svg) no-repeat center;
+  margin: 0 auto;
+}
+.porQueAEmpresa ul li h3 {
+  margin: 20px 0;
+}
+.porQueAEmpresa ul li h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #F7CF4B;
+  margin: 10px auto 20px auto;
+}
+.missaoVisao {
+  width: 90%;
+  text-align: left;
+  margin: 80px auto;
+}
+.missaoVisao div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 40px auto;
+}
+.missaoVisao h3 {
+  margin: 0px 0px 40px 0px;
+}
+.missaoVisao .infoLeft {
+  width: 350px;
+}
+.missaoVisao .infoRight {
+  width: 350px;
+}
+.contato {
+  background: #3D6E8D;
+  color: white;
+  padding: 60px;
+}
+.contato div{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.contato h3.titulo {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+.contato h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+.contatoForm {
+  align-self: center;
+  width: 380px;
+}
+.contatoForm label{
+  display: block;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', serif, sans-serif;
+  line-height: 25px;
+  margin-bottom: 4px;
+}
+.contatoForm input{
+  display: block;
+  width: 100%;
+  border: 3px solid #fff;
+  background: white;
+  padding: 7px;
+  margin-bottom: 10px;
+  outline: none;
+  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contato .contatoDados {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.contato .contatoDados span{
+  display: block;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contato .contatoDados ul li {
+  display: inline-block;
+  padding: 0 20px 0 0;
+}
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  flex-wrap: wrap;
+  padding: 40px;
+  width: 100%;
+  background: #1d1d1d;
+}
+footer .sociais li{
+  display: inline-block;
+  margin: 10px 10px 0 0;
+}
+.tituloFooter {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+.copyright {
+  width: 100%;
+  background: white;
+  padding: 5px;
+  color: #000;
+  text-align: left;
+}
+
+/* LOJA */
+.produtosLoja {
+  color: #000;
+  text-align: left;
+  margin: 0 auto;
+  padding: 10%;
+  width: 100%;
+}
+.produtosLoja section{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.produtosLoja h2 {
+  position: relative;
+}
+.produtosLoja h2::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 26px;
+  background: #174B7F;
+} 
+.produtoAtualA {
+  text-align: left;
+  padding: 10px;
+  color:#000;  
+  width: 400px;
+  box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
+  margin: 30px;
+}
+.produtoAtualA p {
+  margin: 20px 0;
+}
+.produtoAtualA span {
+  color: #31aa39;
+}
+.produtoAtualA h3 {
+  font-size: 32px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.linha01 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* SLIDE PRODUTOS - SLICK */
+.navProdutos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.watch-slider {
+  padding: 80px 0 60px 0;
+  overflow: hidden;
+}
+.watch-slider .slider {
+  transform: scale(0.3);
+}
+.watch-slider .slider.slick-center {
+  transform: scale(1);
+}
+.arrow {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: 70% auto;
+  background-position: center;
+  cursor: pointer;
+}
+#arrow-next {
+  background-image: url('../images/arrow_next.svg');
+}
+#arrow-prev {
+  background-image: url('../images/arrow_prev.svg');
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+  .introHome div h1 {
+    font-size: 50px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 25px;
+  }
+  .produtos ul {
+    width: 100%;
+  }
+  .porQueAEmpresa ul::before {
+   display: none;
+  }
+  .contato div.contatoDados {
+    margin: 100px 0 0 0;
+    width: 100%;
+    padding: 0px;
+  }
+  .contatoDados h3:nth-of-type(1) {
+    margin-bottom: 10px;
+  }
+  .contatoDados h3:nth-of-type(2) {
+    margin-top: 40px;
+  }
+  .contatoDados ul{
+    margin: 10px;
+  }
+}
+
+/* TABLET */
+@media only screen and (max-width: 900px) {
+  .introHome div h1 {
+    font-size: 50px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 25px;
+  }
+  .produtos ul {
+    width: 100%;
+  }
+  .porQueAEmpresa ul::before {
+   display: none;
+  }
+  .contato div.contatoDados {
+    margin: 100px 0 0 0;
+    width: 380px;
+    padding: 0px;
+  }
+  .contatoDados h3:nth-of-type(1) {
+    margin-bottom: 10px;
+  }
+  .contatoDados h3:nth-of-type(2) {
+    margin-top: 40px;
+  }
+  .contatoDados ul{
+    margin: 10px;
+  }
+}
+
+
+/* Slide Home */
 [data-slide] {
   position: relative;
 }
@@ -215,7 +530,7 @@ ul {
 [data-slide] > .active {
   position: relative;
   opacity: 1;
-  transition: opacity 1600ms;
+  transition: opacity 500ms;
   z-index: 1;
 }
 
@@ -229,8 +544,7 @@ ul {
 [data-slide-nav] > button {
   display: inline-block;
   width: 12px;
-  margin: 24px;
-  margin-bottom: 60px;
+  margin: 0px 4px 60px 4px;
   height: 12px;
   border: none;
   padding: 0px;
@@ -240,31 +554,37 @@ ul {
   overflow: hidden;
 }
 [data-slide-nav] > button.active {
-  background: #3D6E8D;
+  background: #fec454;
 }
 
+/* Formulario */
 
-/* LINHA ANTES DA ESCITA */
-/* 
-
-.fotosProdutos ul li:first-child {
-  align-self: flex-start;
-  align-items: flex-start;
+/*  Anti Spam */
+input.naoAparece {
+  visibility: hidden;
+  position: absolute;
+  width: 0px;
 }
-.fotosProdutos li:nth-child(2) {
-  align-self: flex-end;
-}
-.fotosProdutos li:nth-child(3) {
-  align-self: flex-start;
-}
-.fotosProdutos li:nth-child(4) {
-  align-self: flex-end;
+label.naoAparece {
+  visibility: hidden;
+  position: absolute;
+  width: 0px;
 }
 
-.introHome div h1::before {
-  content: '';
-  display: inline-block;
-  width: 20px;
-  height: 37px;
-  background: #FB5;
-} */
+/* Mensagem de envio */
+#form-sucesso h2 {
+  color: #31aa39;
+  font-weight: bold;
+	font-size: 16px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+#form-erro h2{
+  color: #f64540;
+  font-weight: bold;
+	font-size: 16px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
