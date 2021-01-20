@@ -4,7 +4,7 @@ if (window.SimpleSlide) {
     time: 8000, // tempo de transição dos slides
     nav: false, // se deve ou não mostrar a navegação
     auto: true, // se o slide deve passar automaticamente
-    pauseOnHover: true, // pausa a transição automática
+    pauseOnHover: false, // pausa a transição automática
   });
 }
 if (window.SimpleAnime) {
