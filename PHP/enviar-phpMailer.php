@@ -8,11 +8,11 @@ require "./PHPMailer/src/PHPMailer.php";
 require "./PHPMailer/src/SMTP.php";
   
 // Mudar Aqui o e-mail
-$email_envio = "contato@tideweb.com.br"; // E-mail do site (ex: contato@seusite.com)
-$email_pass = "Tide123.Tide123.."; // Senha do e-mail
+$email_envio = "vendas@michiganpumpsbr.com.br"; // E-mail do site (ex: contato@seusite.com)
+$email_pass = "Michigan123."; // Senha do e-mail
 
-$site_name = "TideWeb"; // Nome do Site
-$site_url = "tideweb.com.br"; // URL do Site
+$site_name = "MichiganPUMPSBR"; // Nome do Site
+$site_url = "michiganpumpsbr.com.br/"; // URL do Site
 
 $host_smtp = "br1034.hostgator.com.br"; // HOST SMTP Ex: smtp.domain.com.br
 $host_port = "465"; // Porta do Host, geralmente 465 ou 587
