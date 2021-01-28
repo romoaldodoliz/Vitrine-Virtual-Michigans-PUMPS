@@ -2,10 +2,12 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
-		<title>Tide - Semi Loja Virtual</title>
+		<title>Michigans PUMPS BR - Bombas hidráulicas</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="favIcon.ico" />
 
 		<script>document.documentElement.classList.add("js");</script>
 
@@ -18,7 +20,7 @@
 				<li><a href="#produtos">Produtos</a></li>
 				<li><a href="#porQueAEmpresa">Sobre</a></li>
 				<li><a href="#contato">Orçamento</a></li>
-				<li><a href="../loja.html">Loja</a></li>
+				<li><a href="loja.html">Loja</a></li>
 			</ul>
 		</nav>
 
@@ -26,35 +28,56 @@
 			<div>
 				<h1>PEÇAS DE REPOSIÇÕES PARA BOMBAS HIDRÁULICAS</h1>
 				<p>As melhores opções do mercado com o preço mais em conta e com a mesma qualidade!</p>
-			</div>
+			</div'>
 		</section>
 
 		
 		<section class="produtos" id="produtos">
 
 			<h2 class="titulo">Produtos</h2>
-				<!-- <li class="produtosA">
-					<img src="images/bombaProdutos01.jpg"/>
-					<h3>BOMBA A</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, eius voluptatum. Totam rem quae eveniet adipisci quidem.</p>
-				</li> -->
-				<div class="produtosHome">
-					<img class="slidePrincipal" src="images/bombaPrincipal.svg"/>
-					<img class="slidePrincipal" src="images/bombaPrincipal.svg"/>
-				</div>
 	
-			<div class="fotosProdutos">
-				<ul>
-					<li><img src="images/produto01.svg" alt=""/></li>
-					<li><img src="images/produto02.svg" alt=""/></li>
-					<li><img src="images/produto03.svg" alt=""/></li>
-					<li><img src="images/produto04.svg" alt=""/></li>
-				</ul>
+			<div class="fotosProdutos" data-slide="slideHomeProdutos">
+					<ul>
+							<h3>M200</h3>
+							<li>
+								<img src="images/produtos/ADAPTADOR_M200S6XB.svg" alt=""/>
+								<img src="images/produtos/BUCHAEIXO_M200SML.svg" alt=""/>
+								<img src="images/produtos/CAIXAROLAMENTOS_M200SML.svg" alt=""/>
+								<img src="images/produtos/PLACADESGASTE_M200SML.svg" alt=""/>
+							</li>
+					</ul>
+					<ul>
+						<h3>M100 XLT</h3>
+						<li>
+							<img src="images/produtos/ADAPTADOR_M100XLT.svg" alt=""/>
+							<img src="images/produtos/ROTOR_M100XLT13.svg" alt=""/>
+							<img src="images/produtos/CAIXADEMANCAL_M100XLT.svg" alt=""/>
+							<img src="images/produtos/EIXO_M100XLT.svg" alt=""/>
+						</li>
+					</ul>
+					<ul>
+						<h3>M100 MT</h3>
+						<li>
+							<img src="images/produtos/CAIXAGAXETAM100MT_13.svg" alt=""/>
+							<img src="images/produtos/CARCACAP_M100MT2X3.svg" alt=""/>
+							<img src="images/produtos/CAIXAGAXETA_100MT.svg" alt=""/>
+							<img src="images/produtos/ROTORM100MT_4X6.svg" alt=""/>
+						</li>
+					</ul>
+					<ul>
+						<h3>M100 ST</h3>
+						<li>
+							<img src="images/produtos/BUCHAEIXO_M100ST.svg" alt=""/>
+							<img src="images/produtos/ANELADAPTACAO_M100ST.svg" alt=""/>
+							<img src="images/produtos/CARCACA1X1_MT100ST.svg" alt=""/>
+							<img src="images/produtos/CAIXADESELAGEM_M100ST.svg" alt=""/>
+						</li>
+					</ul>
 			</div>
 
 			<div class="callToActtion">
-				<p>Gostou? Clique aqui e saiba mais!</p></br></br>
-				<a href="produtos.html" class="btnFundoWhite">Loja</a>
+				<p>Gostou? Clique aqui e saiba mais!</p></br>
+				<a href="./loja.html" class="btnFundoWhite" target="_blank">Vitrine Virtual</a>
 			</div>
 			
 		</section>
@@ -64,16 +87,17 @@
 				<img src="./images/logoFinalSemABombaWhite.png"/>
 				<ul>
 					<li>
-						<h3>Qualidade</h3>
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, hic pariatur? Libero nulla explicabo maxime! Debitis facilis.</p>
+						<h3>Preço justo</h3>	
+						<p>Melhor custo benefício do mercado.</p>
 					</li>
 					<li>
-						<h3>Preço justo</h3>	
-						<p>ipsum dolor, sit amet consectetur adipisicing elit. Quis, hic pariatur? Libero nulla explicabo maxime! Debitis facilis.</p>
+						<h3>Qualidade</h3>
+						<p>Produzir e garantir a qualidade dos produtos e serviços que satisfaçam as necessidades de nossos clientes.
+							Criar parcerias para alavancar o crescimento dos fornecedores e colaboradores.</p>
 					</li>
 					<li>
 						<h3>Atendimento</h3>
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, hic pariatur? Libero nulla explicabo maxime! Debitis facilis.</p>
+						<p>Personalizado em canais modernos para melhor atendê-lo.</p>
 					</li>
 				</ul>
 		</section>
@@ -82,13 +106,18 @@
 			<div>
 				<div class="infoLeft">
 					<h3 class="titulo">Missão, Visão</h3>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, deserunt dignissimos. Facilis eveniet molestiae sed quasi illo, praesentium ut aliquam voluptatibus corrupti hic et asperiores minima natus alias delectus optio.
-					Eum, deserunt dignissimos. Facilis eveniet molestiae sed quasi illo, praesentium ut aliquam voluptatibus corrupti hic et asperiores minima natus alias delectus optio.
+				Desenvolver para todos os mercados as melhores soluções em equipamentos rotativos para bombeamento de fluidos, com equipmaentos novos de alta qualddiade, manutenções de alta performance, desenvolvimento
+				e fabricação de peças sobressalentes para todos os equipamentos próprios e similares no mercado, promovendo a satistfação dos cleintes, com custo competitivos, empregabilidade e desenvolvimentos dos funcionários, buscando sempre o equilíbrio financeiro para o crescimento sustentável da emrpesa.
 				</div>
 				<div class="infoRight">
 					<h3 class="titulo">Valores</h3>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, deserunt dignissimos. Facilis eveniet molestiae sed quasi illo, praesentium ut aliquam voluptatibus corrupti hic et asperiores minima natus alias delectus optio.
-					Eum, deserunt dignissimos. Facilis eveniet molestiae sed quasi illo, praesentium ut aliquam voluptatibus corrupti hic et asperiores minima natus alias delectus optio.
+					<ul>
+						<li>- Tecnologia</li>
+						<li>- Qualidade</li>
+						<li>- Compromisso com clientes, fornecedores e sociedade</li>
+						<li>- Preservação do meio ambiente</li>
+						<li>- Atendimento as obrigações legais vingentes</li>
+					</ul>
 				</div>
 			</div>
 		</section>
@@ -116,16 +145,10 @@
 				</form>
 				<div class="contatoDados grid-4 fadeInDown" data-anime="600">
 						<h3>Nossos dados</h3>
-						<span>+55 19 9 9919-8855</span>
-						<span>agenciatide.contact@gmail.com</span>
-						<span>Salto, SP</span>
+						<span>+55 11 94500-8549</span>
+						<span>vendas@michiganpumpsbr.com.br</span>
+						<span>Sorocaba, SP, Brazil</span>
 						<span>Brasil</span>
-						<h3>Redes Sociais</h3>
-						<ul>
-								<li><a target="_blank" href="#"><img src="./images/facebook.svg" alt="Facebook Michigan"></a></li>
-								<li><a target="_blank" href="https://www.instagram.com/agenciatide/"><img src="./images/whatsapp.svg" alt="Instagram Tide"></a></li>
-								<li><a target="_blank" href="https://api.whatsapp.com/send?phone=5519999198855&text=Olá"><img src="./images/instagram.svg" alt="Facebook Tide"></a></li>
-						</ul>
 				</div>
 		</div>
 	</section>
@@ -133,22 +156,26 @@
 	<footer>
 		<ul class="contatoFooter">
 			<li class="tituloFooter">Entre em contato</li>
-			<li>- 19 9 99999-9999</li>
-			<li>- contato@contato.com.br</li>
-			<li>Salto, SP</li>
+			<li>+55 11 94500-8549</li>
+			<li>vendas@michiganpumpsbr.com.br</li>
+			<li>Sorocaba, SP, Brazil</li>
 		</ul>
-		<ul class="sociais">
+		<ul class="contatoFooter footerTide">
+			<li class="tituloFooter"><a href="https://tideweb.com.br" target="_blank">Powered By TideWeb</a></li>
+			<img src="./images/logoSemEscritaTide.png" alt="">
+		</ul>
+		<!-- <ul class="sociais">
 			<h3 class="tituloFooter">Redes sociais</h3>
 			<li><a target="_blank" href="#"><img src="./images/facebook.svg" alt="Facebook Michigan"></a></li>
 			<li><a target="_blank" href="https://www.instagram.com/agenciatide/"><img src="./images/whatsapp.svg" alt="Instagram Tide"></a></li>
 			<li><a target="_blank" href="https://api.whatsapp.com/send?phone=5519999198855&text=Olá"><img src="./images/instagram.svg" alt="Facebook Tide"></a></li>
-		</ul>
+		</ul> -->
 	</footer>
 
 	<div class="copyright">
 		<div class="container">
 				<div>
-						<p>Tide Web 2020 - Todos os direitos reservados.</p>
+						<p>Michigans PUMPS BR 2021 - Todos os direitos reservados a Michigans PUMPS BR.</p>
 				</div>
 		</div>
 	</div>

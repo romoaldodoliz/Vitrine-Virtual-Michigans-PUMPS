@@ -4,7 +4,7 @@ if (window.SimpleSlide) {
     time: 8000, // tempo de transição dos slides
     nav: false, // se deve ou não mostrar a navegação
     auto: true, // se o slide deve passar automaticamente
-    pauseOnHover: true, // pausa a transição automática
+    pauseOnHover: false, // pausa a transição automática
   });
 }
 if (window.SimpleAnime) {
@@ -19,7 +19,92 @@ if(window.SimpleForm) {
   });
 }
 
+// Slide loja
+
+$(function() {
+
+  function attInfosLoja() {
+    $("#watch-name").text($(".slick-center").data("name"));
+    $("#watch-price").text($(".slick-center").data("bomb"));
+  }
+  
+  $('.watch-slider').on('init', function () {
+    attInfosLoja();
+  });
+
+  $('.watch-slider').slick({
+    centerMode: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    infinite: true,
+    arrows: true,
+    useCSS: true,
+    prevArrow:$("#arrow-prev"),
+    nextArrow:$("#arrow-next"),
+    responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
+  $('.watch-slider').on('afterChange', function () {
+    attInfosLoja();
+  });
+
+})
+
+// Modal produtos
+
+function incialModal(modalID, produtoAtual) {
+  const modal = document.getElementById(modalID);
+
+  if(modal) {
+
+    constroiModal(modal, produtoAtual);
+
+    modal.classList.add('mostrarModal');
+    modal.addEventListener('click', (e) => {
+      if(e.target.id == modalID || e.target.id == 'fecharModal') {
+          modal.classList.remove('mostrarModal');
+      } 
+    });
+  }
+}
+
+function constroiModal(modal ,produtoAtual) {
+  
+  const nome = produtoAtual.getAttribute('data-name');
+  const descricao = produtoAtual.getAttribute('data-desc');
+  const referencia = produtoAtual.getAttribute('data-ref');
+  const material = produtoAtual.getAttribute('data-mat');
+  const caminhoIMG = produtoAtual.getAttribute('src');
+
+  modal.querySelector('h3').innerText = nome;
+  modal.querySelector('.ref').innerText = referencia;
+  modal.querySelector('.desc').innerText = descricao;
+  modal.querySelector('.mat').innerText = material;
+  modal.querySelector('img').src = caminhoIMG
+
+}
+
+const saberMaisProduto = document.querySelector('.modalButton');
+saberMaisProduto.addEventListener('click', function () {
+  event.preventDefault();
+  const produtoAtual = document.querySelector('.slick-center')
+  incialModal('modalProdutos', produtoAtual);
+})
+
+
+
+
+
 // Scroll suave js (https://www.youtube.com/watch?v=tzbpAqb2Wjc)
+
 const menuItems = document.querySelectorAll('.menu a[href^="#"]');
 
 menuItems.forEach(item => {
@@ -76,17 +161,4 @@ function smoothScrollTo(endX, endY, duration) {
     window.scroll(newX, newY);
   }, 1000 / 60); // 60 fps
 };
-
-// $(function() {
-
-//   $('.watch-slider').slick({
-//     infinite: true,
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     centerMode: true,
-//     prevArrow: $("#arrow-prev"),
-//     nextArrow: $("#arrow-next"),
-//   });
-
-// })
 
