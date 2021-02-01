@@ -53,6 +53,7 @@ ul {
   color: #000;
   border: 5px solid #000;
 }
+
 /* Menu */
 .menu {
   display: flex;
@@ -134,6 +135,7 @@ ul {
   display: inline-block;
   width: 25px;
   height: 26px;
+  margin: 0 10px 0 0;
   background: #174B7F;
 } 
 .produtos img {
@@ -172,26 +174,19 @@ ul {
 .fotosProdutos h3 {
   font-weight: bold;
   font-size: 2em;
-  margin: 120px 0 20px 0px;
+  margin: 80px 0 20px 0px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  text-align: center;
 }
-.fotosProdutos h3::after {
+/* .fotosProdutos h3::after {
   content: "";
   display: block;
   width: 50px;
   height: 5px;
   background: #F7CF4B;
   margin: 10px auto 20px auto;
-}
-.fotosProdutos h3::before {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 5px;
-  background: #F7CF4B;
-  margin: 20px auto 10px auto;
-}
+} */
 
 /* Porque a empresa */
 .porQueAEmpresa {
@@ -254,7 +249,7 @@ ul {
   height: 250px;
 }
 
-/* CONTATO */
+/* Contato */
 .contato {
   background: #3D6E8D;
   color: white;
@@ -353,6 +348,8 @@ footer .sociais li{
   text-align: left;
 }
 
+/* FIM INSTITUCIONAL */
+
 /* LOJA */
 .produtosLoja {
   display: flex;
@@ -362,22 +359,16 @@ footer .sociais li{
 }
 .produtosLoja h2 {
   text-align: center;
-  margin: 60px;
+  margin: 20px 0px;
 }
-.infosProduct {
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.watch-slider {
-  padding: 80px 0 60px 0;
+.watch-slider, .watch-slider2, .watch-slider3 {
+  padding: 20px 0 60px 0;
   overflow: hidden;
 }
-.produtosLoja .watch-slider img {
-  height: 270px;
+.watch-slider img, .watch-slider2 img, .watch-slider3 img{
+  height: 220px;
 }
-.watch-slider .slide {
+.watch-slider .slide, .watch-slider2 .slide, .watch-slider3 .slide {
   transform: scale(0.6);
   transition: 0.3s;
   -webkit-transition: 0.3s;
@@ -385,8 +376,14 @@ footer .sociais li{
   -o-transition: 0.3s;
   outline: none !important;
 }
-.watch-slider .slide.slick-center {
+.watch-slider .slide.slick-center, .watch-slider2 .slide.slick-center, .watch-slider3 .slide.slick-center {
   transform: scale(1);
+}
+.infosProduct {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .arrow {
   margin: 0 10px;
@@ -397,7 +394,7 @@ footer .sociais li{
   background-position: center;
   cursor: pointer;
 }
-.description {
+.description, .description2, .description3 {
   align-self: center;
   height: 50px;
   line-height: 50px;
@@ -407,19 +404,19 @@ footer .sociais li{
   color: #3a3a3a;
   font-size: 1.7em;
 }
-#watch-price {
+#watch-price, #watch-price2, #watch-price3 {
   align-self: center;
   color: #ff5722;
   font-family: 'Poppins';
   font-weight: 500;
   font-size: 1em;
 }
-.navSlide {
+.navSlide, .navSlide2, .navSlide3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.navSlide a{
+.navSlide a, .navSlide2 a, .navSlide3 a{
   color: #fff;
   font-family: "Trebuchet MS";
   font-size: 0.9em;
@@ -432,16 +429,35 @@ footer .sociais li{
   padding: 5px;
   margin: 15px 0;
 }
-.navSlide div{
+.navSlide div, .navSlide2 div, .navSlide3 div{
   margin: 0px 260px;
   position: relative;
   top: -90px;
 }
-#arrow-prev {
+#arrow-prev, #arrow-prev2, #arrow-prev3 {
   background-image: url(../images/arrow_prev.svg);
 }
-#arrow-next {
+#arrow-next, #arrow-next2, #arrow-next3 {
   background-image: url(../images/arrow_next.svg);
+}
+.produtos01, .produtos02, .produtos03{
+  height: 30%;
+}
+.produtos01::after,.produtos02::after, .produtos03::after{
+  content: "";
+  display: block;
+  width: 25%;
+  height: 1px;
+  background: #000;
+  margin: 60px auto;
+}
+.produtos01::before{
+  content: "";
+  display: block;
+  width: 25%;
+  height: 1px;
+  background: #000;
+  margin: 60px auto;
 }
 /* Modal LOJA */
 .modalContainer{
@@ -457,8 +473,7 @@ footer .sociais li{
   align-items: center;
 }
 .modalContainer.mostrarModal {
-  display: flex;
-}
+  display: flex;}
 .modal {
   background: #fff;
   width: 60%;
@@ -573,9 +588,29 @@ footer .sociais li{
   }
 
   /* LOJA */
-  .navSlide div {
+  .navSlide div, .navSlide2 div, .navSlide3 div {
     margin: 0 50px 60px 50px; 
     top: 0px;
+  }
+  .modal img {
+    display: none;
+  }
+  .modal {
+    height: 600px;
+    min-width: 400px;
+    font-size: 0.7em;
+  }
+  .modal h3{
+    font-size: 1.1em;
+  }
+  .infosProdutosModal ul li{
+    margin: 10px 0px;
+  }
+  .infosProdutosModal ul li:nth-last-child(1){
+    margin: 0 0 40px 0;
+  }
+  .infosProdutosModal button{
+    margin: 20px 0px 0px 0px;
   }
 }
 
@@ -613,7 +648,7 @@ footer .sociais li{
   }
 
   /* LOJA */
-  .navSlide div {
+  .navSlide div, .navSlide2 div, .navSlide3 div {
     margin: 0 50px 60px 50px; 
     top: 0px;
   }
