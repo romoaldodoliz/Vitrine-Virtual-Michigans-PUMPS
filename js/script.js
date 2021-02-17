@@ -1,10 +1,10 @@
 if (window.SimpleSlide) {
   new SimpleSlide({
     slide: 'slideHomeProdutos', // nome do atributo data-slide="principal"
-    time: 8000, // tempo de transição dos slides
     nav: false, // se deve ou não mostrar a navegação
     auto: true, // se o slide deve passar automaticamente
-    pauseOnHover: false, // pausa a transição automática
+    time: 3000, // tempo de transição dos slides
+    pauseOnHover: true, // pausa a transição automática
   });
 }
 if (window.SimpleAnime) {

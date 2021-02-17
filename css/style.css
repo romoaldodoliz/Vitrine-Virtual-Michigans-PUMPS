@@ -5,19 +5,9 @@
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
-body, h1, h2, ul, li, p, dd, dt, dl {
-  margin: 0px;
-  padding: 0px;
-}
-img {
-  display: block;
-  max-width: 100%;
-}
-ul {
-  list-style: none;
-}
+
 .titulo {
-  font-size: 36px;
+  font-size: 2em;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -58,7 +48,6 @@ ul {
 .menu {
   display: flex;
   background: #000;
-  width: 100%;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -74,6 +63,7 @@ ul {
   font-family: monospace;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 1.3em;
 }
 .menu ul li a:hover{
   background: #fff;
@@ -88,19 +78,14 @@ ul {
   justify-content: space-around;
   flex-wrap: wrap;
   text-align: center;
-  height: 300px;
+  height: 400px;
   background: url("../images/bgHome.png") no-repeat center;
   background-size: cover;
 }
-.introHome img{
-  width: auto;
-}
 .introHome div {
-  width: 90%;
-  padding: 0 5%;
+  width: 70vw;
   margin: 0 auto;
   color: #fff;
-  overflow: hidden;
 }
 .introHome div h1 {
   font-size: 2.5em;
@@ -109,7 +94,7 @@ ul {
   color: #fff;
 }
 .introHome div p {
-  width: 70%;
+  font-size: 1.5em;
   margin: 0 auto;
 }
 .introHome div p::before {
@@ -117,7 +102,7 @@ ul {
   display: block;
   width: 100px;
   height: 5px;
-  margin: 20px auto;
+  margin: 40px auto;
   background: #fff;
 }
 
@@ -125,10 +110,7 @@ ul {
 .produtos {
   color: #000;
   text-align: center;
-  padding: 80px;
-}
-.produtos h2 {
-  position: relative;
+  padding: 60px;
 }
 .produtos h2::before {
   content: '';
@@ -139,14 +121,14 @@ ul {
   background: #174B7F;
 } 
 .produtos img {
-  width: 400px;
+  width: 550px;
   margin: 60px auto;
 }
 .produtos .slidePrincipal {
-  width: 530px;
+  width: 630px;
 }
 .produtos .callToActtion {
-  margin: 10px;
+  margin: 0px;
   position: relative;
 }
 .produtos .callToActtion a {
@@ -165,7 +147,7 @@ ul {
   margin: 0px auto;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1100px;
+  width: 70vw;
 }
 .fotosProdutos img {
   margin: 40px auto;
@@ -173,103 +155,98 @@ ul {
 }
 .fotosProdutos h3 {
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.7em;
   margin: 80px 0 20px 0px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   text-align: center;
 }
-/* .fotosProdutos h3::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 5px;
-  background: #F7CF4B;
-  margin: 10px auto 20px auto;
-} */
 
 /* Porque a empresa */
 .porQueAEmpresa {
   background: url(../images/porqueAEmpresa/bgPorqueAEmpresa.svg);
   margin: 0 auto;
-  color: white;
+  color: #fff;
   text-align: center;
-  padding: 60px;
+  padding: 40px;
 }
 .porQueAEmpresa ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   text-align: center;
-  width: 100%;
   margin: 0 auto;
-  height: auto;
 }
 .porQueAEmpresa ul li{
-  width: 280px;
-  margin: 60px;
+  width: 480px;
+  margin: 0 auto 60px auto;
+}
+.porQueAEmpresa ul li h3 {
+  font-size: 1.5em;
 }
 .porQueAEmpresa img{
   margin: 0 auto;
-  width: 300px;
-  z-index: 1;
+  width: 450px;
+  height: auto;
 }
-.porQueAEmpresa ul li h3 {
-  margin: 20px 0;
+.porQueAEmpresa ul li p {
+  font-size: 1.5em;
 }
 .porQueAEmpresa ul li h3::after {
   content: "";
   display: block;
   width: 50px;
-  height: 3px;
+  height: 4px;
   background: #F7CF4B;
   margin: 10px auto 20px auto;
 }
 .missaoVisao {
-  width: 90%;
   text-align: left;
-  margin: 80px auto;
+  margin: 20px auto;
 }
 .missaoVisao div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  margin: 40px auto;
+  margin: 20px;
 }
 .missaoVisao h3 {
-  margin: 0px 0px 40px 0px;
+  margin: 0px 0px 30px 0px;
 }
 .missaoVisao .infoLeft {
-  width: 350px;
+  width: 750px;
 }
 .missaoVisao .infoRight {
-  width: 350px;
-  height: 250px;
+  width: 550px;
+}
+.missaoVisao p, .missaoVisao .infoRight ul li{
+  font-size: 1.5em;
+}
+.missaoVisao .infoRight ul li {
+  margin: 10px 0;
 }
 
 /* Contato */
 .contato {
   background: #3D6E8D;
   color: white;
-  padding: 60px;
+  padding: 40px;
 }
 .contato div{
-  padding: 20px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.contato h3.titulo {
-  text-align: center;
-  margin: 0 0 20px 0;
-}
 .contato h3 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: bold;
+  text-align: center;
+  margin: 0 0 20px 0;
 }
 .contatoForm {
   align-self: center;
@@ -277,7 +254,7 @@ ul {
 }
 .contatoForm label{
   display: block;
-  font-size: 18px;
+  font-size: 1.3em;
   font-family: Georgia, 'Times New Roman', serif, sans-serif;
   line-height: 25px;
   margin-bottom: 4px;
@@ -294,30 +271,37 @@ ul {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .contato .contatoDados {
-  width: 270px;
+  align-self: flex-start;
+  width: 380px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 10px;
+}
+.contatoDados h3 {
+  margin-top: 40px;
+  text-align: left;
+  font-size: 1.5em;
 }
 .contato .contatoDados span{
+  margin: 10px 0px;
   display: block;
-  font-size: 18px;
+  font-size: 1.5em;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .contato .contatoDados ul li {
   display: inline-block;
-  padding: 0 20px 0 0;
 }
 
 /* Footer */
 footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   color: white;
   flex-wrap: wrap;
   padding: 40px;
-  width: 100%;
   background: #1d1d1d;
 }
 footer .sociais li{
@@ -330,6 +314,9 @@ footer .sociais li{
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 10px;
+}
+.contatoFooter {
+  margin: 20px auto;
 }
 .contatoFooter img {
   background-size: cover;
@@ -354,16 +341,14 @@ footer .sociais li{
 .produtosLoja {
   display: flex;
   flex-direction: column;
-  margin: 60px 4px;
-  height: 100%;
+  justify-content: center;
 }
 .produtosLoja h2 {
   text-align: center;
-  margin: 20px 0px;
+  margin: 10px 0px;
 }
 .watch-slider, .watch-slider2, .watch-slider3 {
-  padding: 20px 0 60px 0;
-  overflow: hidden;
+  padding: 10px 0 60px 0;
 }
 .watch-slider img, .watch-slider2 img, .watch-slider3 img{
   height: 220px;
@@ -425,9 +410,8 @@ footer .sociais li{
   text-decoration: none;
   background-color: black;
   text-transform: uppercase;
-  height: 30px;
-  padding: 5px;
-  margin: 15px 0;
+  padding: 10px;
+  margin: 15px;
 }
 .navSlide div, .navSlide2 div, .navSlide3 div{
   margin: 0px 260px;
@@ -473,11 +457,12 @@ footer .sociais li{
   align-items: center;
 }
 .modalContainer.mostrarModal {
-  display: flex;}
+  display: flex;
+}
 .modal {
   background: #fff;
-  width: 60%;
-  height: 600px;
+  width: 80%;
+  height: 65%;
   min-width: 600px;
   padding: 40px;
   position: relative;
@@ -512,6 +497,9 @@ footer .sociais li{
   font-weight: bold;
   margin: 0 0 50px 0;
 }
+.modalButton {
+  padding: 35px;
+}
 .modal ul {
   margin: 10px 0;
   display: flex;
@@ -522,12 +510,11 @@ footer .sociais li{
   margin: 30px 0;
 }
 .botaoContatoModal {
-  height: 50px;
   background-color: green;
   color: white;
   border: none;
   width: 160px;
-  padding: 15px 25px;
+  padding: 15px 30px;
 }
 #fecharModal {
   height: 50px;
@@ -554,104 +541,6 @@ footer .sociais li{
   height: 6px;
   background: #3F6F8E;
   margin: 40px auto;
-}
-/* MOBILE */
-@media only screen and (max-width: 830px) and (min-width: 300px) {
-  .introHome div h1 {
-    font-size: 1.5em;
-  }
-  .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 25px;
-  }
-  .porQueAEmpresa ul::before {
-   display: none;
-  }
-  .contato div.contatoDados {
-    margin: 100px 0 0 0;
-    width: 100%;
-    padding: 0px;
-  }
-  .contatoDados h3:nth-of-type(1) {
-    margin-bottom: 10px;
-  }
-  .contatoDados h3:nth-of-type(2) {
-    margin-top: 40px;
-  }
-  .contatoDados ul{
-    margin: 10px;
-  }
-  .footerTide {
-    display: none;
-  }
-
-  /* LOJA */
-  .navSlide div, .navSlide2 div, .navSlide3 div {
-    margin: 0 50px 60px 50px; 
-    top: 0px;
-  }
-  .modal img {
-    display: none;
-  }
-  .modal {
-    height: 600px;
-    min-width: 400px;
-    font-size: 0.7em;
-  }
-  .modal h3{
-    font-size: 1.1em;
-  }
-  .infosProdutosModal ul li{
-    margin: 10px 0px;
-  }
-  .infosProdutosModal ul li:nth-last-child(1){
-    margin: 0 0 40px 0;
-  }
-  .infosProdutosModal button{
-    margin: 20px 0px 0px 0px;
-  }
-}
-
-/* TABLET */
-@media only screen and (min-width: 830px) and (max-width: 1080px) {
-  .introHome div h1 {
-    font-size: 1.5em;
-  }
-  .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 25px;
-  }
-  .produtosB {
-    height: 450px;
-    padding: 0px;
-  }
-  .porQueAEmpresa ul::before {
-   display: none;
-  }
-  .contato div.contatoDados {
-    margin: 100px 0 0 0;
-    width: 380px;
-    padding: 0px;
-  }
-  .contatoDados h3:nth-of-type(1) {
-    margin-bottom: 10px;
-  }
-  .contatoDados h3:nth-of-type(2) {
-    margin-top: 40px;
-  }
-  .contatoDados ul{
-    margin: 10px;
-  }
-
-  /* LOJA */
-  .navSlide div, .navSlide2 div, .navSlide3 div {
-    margin: 0 50px 60px 50px; 
-    top: 0px;
-  }
 }
 
 /* Slide Home */
@@ -723,4 +612,10 @@ label.naoAparece {
 	line-height: 25px;
 	text-transform: uppercase;
 	letter-spacing: .1em;
+}
+
+@media only screen and (min-width: 830px) and (max-width: 1080px) {
+
+
+
 }
