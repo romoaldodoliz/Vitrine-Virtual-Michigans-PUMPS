@@ -615,7 +615,15 @@ label.naoAparece {
 }
 
 @media only screen and (min-width: 830px) and (max-width: 1080px) {
-
+  .missaoVisao div {
+    margin: 40px auto;
+  }
+  .infoLeft h3, .infoRight h3 {
+    text-align: center;
+  }
+  .missaoVisao .infoRight {
+    width: 80vw;
+  }
 
 
 }
