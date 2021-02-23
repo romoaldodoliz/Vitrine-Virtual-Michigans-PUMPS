@@ -624,6 +624,9 @@ label.naoAparece {
   .missaoVisao .infoRight {
     width: 80vw;
   }
+  .modal {
+    height: 45%;
+  }
 
 
 }
