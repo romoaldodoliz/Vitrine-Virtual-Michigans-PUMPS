@@ -121,11 +121,8 @@
   background: #174B7F;
 } 
 .produtos img {
-  width: 550px;
+  width: 350px;
   margin: 60px auto;
-}
-.produtos .slidePrincipal {
-  width: 630px;
 }
 .produtos .callToActtion {
   margin: 0px;
@@ -179,7 +176,7 @@
   margin: 0 auto;
 }
 .porQueAEmpresa ul li{
-  width: 480px;
+  width: 400px;
   margin: 0 auto 60px auto;
 }
 .porQueAEmpresa ul li h3 {
@@ -215,11 +212,17 @@
 .missaoVisao h3 {
   margin: 0px 0px 30px 0px;
 }
+.missaoVisao .infoRight {
+  height: 400px;
+}
+.missaoVisao .infoRight h3 {
+  height: 0px;
+}
 .missaoVisao .infoLeft {
-  width: 750px;
+  width: 500px;
 }
 .missaoVisao .infoRight {
-  width: 550px;
+  width: 450px;
 }
 .missaoVisao p, .missaoVisao .infoRight ul li{
   font-size: 1.5em;
@@ -373,7 +376,7 @@ footer .sociais li{
 .arrow {
   margin: 0 10px;
   width: 50px;
-  height: 50px;
+  height: 50px; 
   background-repeat: no-repeat;
   background-size: 70% auto;
   background-position: center;
@@ -461,8 +464,8 @@ footer .sociais li{
 }
 .modal {
   background: #fff;
-  width: 80%;
-  height: 65%;
+  width: 80vw;
+  height: 80vh;
   min-width: 600px;
   padding: 40px;
   position: relative;
@@ -615,8 +618,14 @@ label.naoAparece {
 }
 
 @media only screen and (min-width: 830px) and (max-width: 1080px) {
+  .fotosProdutos ul li{
+    width: 80vw;
+  }
   .missaoVisao div {
     margin: 40px auto;
+  }
+  .missaoVisao {
+    width: 500px;
   }
   .infoLeft h3, .infoRight h3 {
     text-align: center;
@@ -626,6 +635,17 @@ label.naoAparece {
   }
   .modal {
     height: 45%;
+  }
+  .porQueAEmpresa {
+    font-size: 1.5em;
+    padding: 60px;
+  }
+  .porQueAEmpresa ul {
+    flex-direction: column;
+    
+  }
+  .porQueAEmpresa img {
+      width: 300px;
   }
 
 

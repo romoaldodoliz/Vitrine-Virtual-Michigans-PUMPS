@@ -7,9 +7,9 @@ if (window.SimpleSlide) {
     pauseOnHover: true, // pausa a transição automática
   });
 }
-if (window.SimpleAnime) {
-  new SimpleAnime();
-}
+
+// FIM SIMPLE SLIDE //
+
 if(window.SimpleForm) {
   new SimpleForm({
     form: ".formphp", // seletor do formulário
