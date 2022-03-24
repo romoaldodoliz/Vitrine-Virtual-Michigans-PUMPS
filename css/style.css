@@ -1,0 +1,652 @@
+/* Geral */
+* {
+  box-sizing: border-box;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo {
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+}
+.btnFundoWhite {
+  border: 5px solid #000;
+  margin-top: 10px;
+  padding: 10px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: .1em;
+  background: none;
+}
+.btnFundoWhite:hover {
+  color: #174B7F;
+  border: 5px solid #174B7F;
+}
+.btnFundoPreto {
+  border: 5px solid #fff;
+  margin-top: 10px;
+  padding: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: .1em;
+  background: none;
+}
+.btnFundoPreto:hover {
+  color: #000;
+  border: 5px solid #000;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  background: #000;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.menu ul li {
+  display: inline-block;
+  margin: 20px 5px;
+}
+.menu ul li a {
+  padding: 15px;
+  color: #fff;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.menu ul li a:hover{
+  background: #fff;
+  color: #000;
+  border-radius: 3px;
+}
+
+/* IntroHome */
+.introHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  height: 400px;
+  background: url("../images/bgHome.png") no-repeat center;
+  background-size: cover;
+}
+.introHome div {
+  width: 70vw;
+  margin: 0 auto;
+  color: #fff;
+}
+.introHome div h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  color: #fff;
+}
+.introHome div p {
+  font-size: 1.5em;
+  margin: 0 auto;
+}
+.introHome div p::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 5px;
+  margin: 40px auto;
+  background: #fff;
+}
+
+/* Produtos */
+.produtos {
+  color: #000;
+  text-align: center;
+  padding: 60px;
+}
+.produtos h2::before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 26px;
+  margin: 0 10px 0 0;
+  background: #174B7F;
+} 
+.produtos img {
+  width: 350px;
+  margin: 60px auto;
+}
+.produtos .callToActtion {
+  margin: 0px;
+  position: relative;
+}
+.produtos .callToActtion a {
+  box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
+}
+.produtos .callToActtion a:hover {
+  box-shadow: none;
+  background: #174B7F;
+  color: #fff;
+}
+.fotosProdutos ul {
+  margin: 40px 0;
+}
+.fotosProdutos ul li{
+  display: flex;
+  margin: 0px auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70vw;
+}
+.fotosProdutos img {
+  margin: 40px auto;
+  background-size: cover;
+}
+.fotosProdutos h3 {
+  font-weight: bold;
+  font-size: 1.7em;
+  margin: 80px 0 20px 0px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+/* Porque a empresa */
+.porQueAEmpresa {
+  background: url(../images/porqueAEmpresa/bgPorqueAEmpresa.svg);
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+}
+.porQueAEmpresa ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+}
+.porQueAEmpresa ul li{
+  width: 400px;
+  margin: 0 auto 60px auto;
+}
+.porQueAEmpresa ul li h3 {
+  font-size: 1.5em;
+}
+.porQueAEmpresa img{
+  margin: 0 auto;
+  width: 450px;
+  height: auto;
+}
+.porQueAEmpresa ul li p {
+  font-size: 1.5em;
+}
+.porQueAEmpresa ul li h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: #F7CF4B;
+  margin: 10px auto 20px auto;
+}
+.missaoVisao {
+  text-align: left;
+  margin: 20px auto;
+}
+.missaoVisao div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.missaoVisao h3 {
+  margin: 0px 0px 30px 0px;
+}
+.missaoVisao .infoRight {
+  height: 400px;
+}
+.missaoVisao .infoRight h3 {
+  height: 0px;
+}
+.missaoVisao .infoLeft {
+  width: 500px;
+}
+.missaoVisao .infoRight {
+  width: 450px;
+}
+.missaoVisao p, .missaoVisao .infoRight ul li{
+  font-size: 1.5em;
+}
+.missaoVisao .infoRight ul li {
+  margin: 10px 0;
+}
+
+/* Contato */
+.contato {
+  background: #3D6E8D;
+  color: white;
+  padding: 40px;
+}
+.contato div{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.contato h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+.contatoForm {
+  align-self: center;
+  width: 380px;
+}
+.contatoForm label{
+  display: block;
+  font-size: 1.3em;
+  font-family: Georgia, 'Times New Roman', serif, sans-serif;
+  line-height: 25px;
+  margin-bottom: 4px;
+}
+.contatoForm input{
+  display: block;
+  width: 100%;
+  border: 3px solid #fff;
+  background: white;
+  padding: 7px;
+  margin-bottom: 10px;
+  outline: none;
+  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contato .contatoDados {
+  align-self: flex-start;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.contatoDados h3 {
+  margin-top: 40px;
+  text-align: left;
+  font-size: 1.5em;
+}
+.contato .contatoDados span{
+  margin: 10px 0px;
+  display: block;
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+}
+.contato .contatoDados ul li {
+  display: inline-block;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  flex-wrap: wrap;
+  padding: 40px;
+  background: #1d1d1d;
+}
+footer .sociais li{
+  display: inline-block;
+  margin: 10px 10px 0 0;
+}
+.tituloFooter {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+.contatoFooter {
+  margin: 20px auto;
+}
+.contatoFooter img {
+  background-size: cover;
+  width: 70px;
+  margin: 0 auto;
+}
+.contatoFooter a {
+  color: white;
+  text-decoration: none;
+}
+.copyright {
+  width: 100%;
+  background: white;
+  padding: 5px;
+  color: #000;
+  text-align: left;
+}
+
+/* FIM INSTITUCIONAL */
+
+/* LOJA */
+.produtosLoja {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.produtosLoja h2 {
+  text-align: center;
+  margin: 10px 0px;
+}
+.watch-slider, .watch-slider2, .watch-slider3 {
+  padding: 10px 0 60px 0;
+}
+.watch-slider img, .watch-slider2 img, .watch-slider3 img{
+  height: 220px;
+}
+.watch-slider .slide, .watch-slider2 .slide, .watch-slider3 .slide {
+  transform: scale(0.6);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  outline: none !important;
+}
+.watch-slider .slide.slick-center, .watch-slider2 .slide.slick-center, .watch-slider3 .slide.slick-center {
+  transform: scale(1);
+}
+.infosProduct {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.arrow {
+  margin: 0 10px;
+  width: 50px;
+  height: 50px; 
+  background-repeat: no-repeat;
+  background-size: 70% auto;
+  background-position: center;
+  cursor: pointer;
+}
+.description, .description2, .description3 {
+  align-self: center;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  font-family: 'Poppins';
+  font-weight: bold;
+  color: #3a3a3a;
+  font-size: 1.7em;
+}
+#watch-price, #watch-price2, #watch-price3 {
+  align-self: center;
+  color: #ff5722;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1em;
+}
+.navSlide, .navSlide2, .navSlide3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.navSlide a, .navSlide2 a, .navSlide3 a{
+  color: #fff;
+  font-family: "Trebuchet MS";
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: black;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 15px;
+}
+.navSlide div, .navSlide2 div, .navSlide3 div{
+  margin: 0px 260px;
+  position: relative;
+  top: -90px;
+}
+#arrow-prev, #arrow-prev2, #arrow-prev3 {
+  background-image: url(../images/arrow_prev.svg);
+}
+#arrow-next, #arrow-next2, #arrow-next3 {
+  background-image: url(../images/arrow_next.svg);
+}
+.produtos01, .produtos02, .produtos03{
+  height: 30%;
+}
+.produtos01::after,.produtos02::after, .produtos03::after{
+  content: "";
+  display: block;
+  width: 25%;
+  height: 1px;
+  background: #000;
+  margin: 60px auto;
+}
+.produtos01::before{
+  content: "";
+  display: block;
+  width: 25%;
+  height: 1px;
+  background: #000;
+  margin: 60px auto;
+}
+/* Modal LOJA */
+.modalContainer{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, .5);
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modalContainer.mostrarModal {
+  display: flex;
+}
+.modal {
+  background: #fff;
+  width: 80vw;
+  height: 80vh;
+  min-width: 600px;
+  padding: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  border: solid 5px grey;
+  justify-content: space-around;
+  align-items: center;
+}
+.infosProdutosModal ul label {
+  font-size: 1em;
+  font-weight: bold;
+}
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.mostrarModal .modal {
+  animation: modal .3s;
+}
+.modal h3 {
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  margin: 0 0 50px 0;
+}
+.modalButton {
+  padding: 35px;
+}
+.modal ul {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.modal ul li{
+  margin: 30px 0;
+}
+.botaoContatoModal {
+  background-color: green;
+  color: white;
+  border: none;
+  width: 160px;
+  padding: 15px 30px;
+}
+#fecharModal {
+  height: 50px;
+  background-color: grey;
+  color: white;
+  border: none;
+  width: 160px;
+}
+.infosProdutosModal {
+  width: 50%;
+}
+.infosProdutosModal::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 6px;
+  background: #3F6F8E;
+  margin: 40px auto;
+}
+.infosProdutosModal::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 6px;
+  background: #3F6F8E;
+  margin: 40px auto;
+}
+
+/* Slide Home */
+[data-slide] {
+  position: relative;
+}
+[data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+[data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+  z-index: 1;
+}
+
+/* CSS recomendado navegação - SlideHome */
+[data-slide-nav] {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+[data-slide-nav] > button {
+  display: inline-block;
+  width: 12px;
+  margin: 0px 4px 60px 4px;
+  height: 12px;
+  border: none;
+  padding: 0px;
+  border-radius: 6px;
+  background: #1d1d1d;
+  text-indent: -100px;
+  overflow: hidden;
+}
+[data-slide-nav] > button.active {
+  background: #174B7F;
+}
+
+/* Formulario */
+
+/*  Anti Spam */
+input.naoAparece {
+  visibility: hidden;
+  position: absolute;
+  width: 0px;
+}
+label.naoAparece {
+  visibility: hidden;
+  position: absolute;
+  width: 0px;
+}
+
+/* Mensagem de envio */
+#form-sucesso h2 {
+  color: #31aa39;
+  font-weight: bold;
+	font-size: 16px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+#form-erro h2{
+  color: #f64540;
+  font-weight: bold;
+	font-size: 16px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+@media only screen and (min-width: 830px) and (max-width: 1080px) {
+  .fotosProdutos ul li{
+    width: 80vw;
+  }
+  .missaoVisao div {
+    margin: 40px auto;
+  }
+  .missaoVisao {
+    width: 500px;
+  }
+  .infoLeft h3, .infoRight h3 {
+    text-align: center;
+  }
+  .missaoVisao .infoRight {
+    width: 80vw;
+  }
+  .modal {
+    height: 45%;
+  }
+  .porQueAEmpresa {
+    font-size: 1.5em;
+    padding: 60px;
+  }
+  .porQueAEmpresa ul {
+    flex-direction: column;
+
+  }
+  .porQueAEmpresa img {
+      width: 300px;
+  }
+
+
+}
